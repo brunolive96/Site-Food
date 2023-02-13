@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <!-- Importante para tornar o site responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+
+    <!-- Vincule nosso arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- A seção da barra de navegação começa aqui -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/bg.png" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="sites.html">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="categoria.html">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="comidas.html">Comidas</a>
+                    </li>
+                    <li>
+                        <a href="#contatos">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- A seção da barra de navegação termina aqui -->
+
+    <!-- Seção de busca de alimentos começa aqui -->
+    <section class="food-search">
+        <div class="container">
+            
+            <h2 class="text-center text-white">Preencha este formulário para confirmar o seu pedido.</h2>
+
+            <form action="#" class="order text-white">
+                <fieldset>
+                    <legend>Comida Selecionada</legend>
+
+                    <div class="food-menu-img">
+                        <img src="images/menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                    </div>
+    
+                    <div class="food-menu-desc">
+                        <h3>Pizza Média</h3>
+                        <p class="food-price">$15.30</p>
+
+                        <div class="order-label">Quantidade</div>
+                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Detalhes da Entrega</legend>
+                    <div class="order-label">Nome completo</div>
+                    <input type="text" name="full-name" placeholder="E.g. Pedro Silva" class="input-responsive" required>
+
+                    <div class="order-label">Número de telefone</div>
+                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+
+                    <div class="order-label">Email</div>
+                    <input type="email" name="email" placeholder="E.g. Pedr@oSilva.com" class="input-responsive" required>
+
+                    <div class="order-label">Endereço</div>
+                    <textarea name="address" rows="10" placeholder="E.g. Rua, Cidade, País" class="input-responsive" required></textarea>
+
+                    <input type="submit" name="submit" value="Confirmar Pedido" class="btn btn-primary">
+                </fieldset>
+
+            </form>
+
+        </div>
+    </section>
+    <!-- Seção de busca de comida termina aqui -->
+
+    <!-- Seção social começa aqui -->
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Seção social termina aqui -->
+
+    <!-- a seção de rodapé começa aqui -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>Todos os direitos reservados. Projetado por <a href="#">BRUNO OLV</a></p>
+        </div>
+    </section>
+    <!-- a seção do rodapé termina aqui -->
+
+</body>
+</html>

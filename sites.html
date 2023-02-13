@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <!-- Importante para tornar o site responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+
+    <!-- Vincule nosso arquivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+        html {
+                 scroll-behavior: smooth;
+                }
+
+        .button {
+          border-radius: 6px;
+          background-color: rgba(0232, 52, 52 , 0.9);
+          border: 2px solid black;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 28px;
+          padding: 20px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+
+        .button:hover span {
+          padding-right: 25px;
+        }
+
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- A seção da barra de navegação começa aqui -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="" title="Logo">
+                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="sites.html">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="categoria.html">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="comidas.html">Comidas</a>
+                    </li>
+                    <li>
+                        <a href="Pizza.html">Pizzas</a>
+                    </li>
+                    <li>
+                        <a href="Hambúrguers.php">Hambúrguer</a>
+                    </li>
+                    <li>
+                        <a href="Bebidas.php">Bebidas</a>
+                    </li>
+                    <li>
+                        <a href="#contatos" >Contatos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- A seção da barra de navegação termina aqui -->
+
+    <!-- Seção de busca de alimentos começa aqui -->
+    <section class="food-search text-center">
+        <div class="container">
+            
+            <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank"> 
+                <button style="width: 300px; height: 50px; font-size: 2rem;
+            border-radius: 10px; background-color: rgba(80, 80, 80, .8); color: white; cursor: pointer;
+            ">Peça
+            agora!</button>
+            </a>
+
+        </div>
+    </section>
+    <!-- Seção de busca de comida termina aqui -->
+
+    <!-- A seção de categorias começa aqui -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="text-center">Procurar Comidas</h2>
+
+            <a href="Pizza.html">
+            <div class="box-3 float-container">
+                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Pizza</h3>
+            </div>
+            </a>
+
+            <a href="Hambúrguers.php">
+            <div class="box-3 float-container">
+                <img src="images/burger.jpg" alt="Burger" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Burger</h3>
+            </div>
+            </a>
+
+            <a href="Bebidas.php">
+            <div class="box-3 float-container">
+                <img src="images/Bebidas.jpg" alt="Bebidas" class="img-responsive img-curve">
+
+                <h3 class="float-text text-white">Bebidas</h3>
+            </div>
+            </a>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- A seção Categorias termina aqui -->
+
+    <!-- Seção de menu de alimentos começa aqui -->    <section class="food-menu">
+        <div class="container">
+            <h2 class="text-center">Cardápio</h2>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/Hambúrguer Duplo com Maionese Chipotle.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Hambúrguer Duplo com Maionese Chipotle</h4>
+                    <p class="food-price">18.30</p>
+                    <p class="food-detail">
+                        Hambúrguer Duplo com Maionese Chipotle.
+                    <br>
+                    <br>
+                    <a href="ordem.html" class="btn btn-primary">comfirmar pedido</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/menu-burger.jpg" alt="Chicke Hawain Burger" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Hambúrguer Supremo</h4>
+                    <p class="food-price">$20.50</p>
+                    <p class="food-detail">
+                        Feito com Molho Italiano, Frango e Legumes Orgânicos.
+                    <br>
+                    <br>
+                    <a href="ordem.html" class="btn btn-primary">comfirmar pedido</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/Coca-Cola-1-Litro1.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Coca-Cola</h4>
+                    <p class="food-price">$10.99</p>
+                    <p class="food-detail">
+                        Coca-Cola-1-Litro.
+                    <br>
+                    <br>
+                 <a href="ordem.html" class="btn btn-primary">comfirmar pedido</a>
+                </div>
+            </div>
+
+            <div class="food-menu-box">
+                <div class="food-menu-img">
+                    <img src="images/Hambúrguer Combo Batata Frita.jpg" alt="Chicke Hawain Momo" class="img-responsive img-curve">
+                </div>
+
+                <div class="food-menu-desc">
+                    <h4>Hambúrguer Combo Batata Frita</h4>
+                    <p class="food-price">$13.33</p>
+                    <p class="food-detail">
+                        Hambúrguer Combo Batata Frita.
+                    <br>
+                    <br>
+                    <a href="ordem.html" class="btn btn-primary">comfirmar pedido</a>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+
+        <p class="text-center">
+            <a href="#">Ver Todos os Alimentos</a>
+        </p>
+    </section>
+    <!-- A Seção do Menu COMIDA Termina Aqui -->
+
+    <!-- Seção social começa aqui -->
+    <section class="social" id="contatos">
+        <div class="container text-center">
+            <ul>
+
+                <li>
+                    <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="blank_">
+                        <img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/" target="blank_">
+                        <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://twitter.com/" target="blank_">
+                        <img src="https://img.icons8.com/fluent/48/000000/twitter.png"/>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <!-- Seção social termina aqui -->
+
+    <!-- a seção de rodapé começa aqui -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>Todos os direitos reservados. Projetado por <a href="#">BRUNO OLV</a></p>
+        </div>
+    </section>
+    <!-- a seção do rodapé termina aqui -->
+
+</body>
+</html>
